@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="14" passed="8" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-14T15:09:23 IST" name="Suite" finished-at="2022-08-14T15:09:25 IST" duration-ms="2276">
+    <groups>
+      <group name="Regression">
+        <method signature="TestPriorization.createPatient()[pri:1, instance:training.testng.TestPriorization@74455848]" name="createPatient" class="training.testng.TestPriorization"/>
+        <method signature="TestPriorization.updatePatient()[pri:2, instance:training.testng.TestPriorization@74455848]" name="updatePatient" class="training.testng.TestPriorization"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2022-08-14T15:09:23 IST" name="Test" finished-at="2022-08-14T15:09:25 IST" duration-ms="2276">
+      <class name="training.testng.TestingExample">
+        <test-method signature="timeoutExample()[pri:0, instance:training.testng.TestingExample@15aab8c6]" started-at="2022-08-14T15:09:23 IST" name="timeoutExample" finished-at="2022-08-14T15:09:25 IST" duration-ms="2026" status="FAIL">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method training.testng.TestingExample.timeoutExample() didn't finish within the time-out 2000]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method training.testng.TestingExample.timeoutExample() didn't finish within the time-out 2000
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeoutWithNewExecutor(MethodInvocationHelper.java:384)
+at org.testng.internal.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:283)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:604)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeoutExample -->
+      </class> <!-- training.testng.TestingExample -->
+      <class name="training.testng.TestPriorization">
+        <test-method signature="createPatient()[pri:1, instance:training.testng.TestPriorization@74455848]" started-at="2022-08-14T15:09:23 IST" name="createPatient" finished-at="2022-08-14T15:09:23 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPatient -->
+        <test-method signature="updatePatient()[pri:2, instance:training.testng.TestPriorization@74455848]" started-at="2022-08-14T15:09:23 IST" name="updatePatient" finished-at="2022-08-14T15:09:23 IST" depends-on-methods="training.testng.TestPriorization.createPatient" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePatient -->
+      </class> <!-- training.testng.TestPriorization -->
+      <class name="training.testng.SoftAssertExample">
+        <test-method is-config="true" signature="setup()[pri:0, instance:training.testng.SoftAssertExample@37654521]" started-at="2022-08-14T15:09:23 IST" name="setup" finished-at="2022-08-14T15:09:23 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="softAssert()[pri:0, instance:training.testng.SoftAssertExample@37654521]" started-at="2022-08-14T15:09:23 IST" name="softAssert" finished-at="2022-08-14T15:09:23 IST" duration-ms="8" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [meet] but found [hp],
+expected [7878] but found [9898]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [meet] but found [hp],
+expected [7878] but found [9898]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at training.testng.SoftAssertExample.softAssert(SoftAssertExample.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssert -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:training.testng.SoftAssertExample@37654521]" started-at="2022-08-14T15:09:23 IST" name="setup" finished-at="2022-08-14T15:09:23 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="softAssert2()[pri:0, instance:training.testng.SoftAssertExample@37654521]" started-at="2022-08-14T15:09:23 IST" name="softAssert2" finished-at="2022-08-14T15:09:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- softAssert2 -->
+      </class> <!-- training.testng.SoftAssertExample -->
+      <class name="training.testng.Annotations3">
+        <test-method signature="oneTest()[pri:0, instance:training.testng.Annotations3@732c2a62]" started-at="2022-08-14T15:09:23 IST" name="oneTest" finished-at="2022-08-14T15:09:23 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- oneTest -->
+      </class> <!-- training.testng.Annotations3 -->
+      <class name="training.testng.Annotations2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:training.testng.Annotations2@2df9b86]" started-at="2022-08-14T15:09:23 IST" name="setup" finished-at="2022-08-14T15:09:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:training.testng.Annotations2@2df9b86]" started-at="2022-08-14T15:09:23 IST" name="beforeMethod" finished-at="2022-08-14T15:09:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="threeTest()[pri:0, instance:training.testng.Annotations2@2df9b86]" started-at="2022-08-14T15:09:23 IST" name="threeTest" finished-at="2022-08-14T15:09:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- threeTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:training.testng.Annotations2@2df9b86]" started-at="2022-08-14T15:09:23 IST" name="afterMethod" finished-at="2022-08-14T15:09:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:training.testng.Annotations2@2df9b86]" started-at="2022-08-14T15:09:23 IST" name="afterclass" finished-at="2022-08-14T15:09:23 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- training.testng.Annotations2 -->
+      <class name="training.testng.AssertionExample">
+        <test-method signature="testone()[pri:0, instance:training.testng.AssertionExample@1ba9117e]" started-at="2022-08-14T15:09:23 IST" name="testone" finished-at="2022-08-14T15:09:23 IST" duration-ms="14" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Log off] but found [sign off]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Log off] but found [sign off]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at training.testng.AssertionExample.testone(AssertionExample.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testone -->
+      </class> <!-- training.testng.AssertionExample -->
+      <class name="training.testng.Annotations">
+        <test-method is-config="true" signature="setup()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="setup" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="beforeMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="firstTest()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="firstTest" finished-at="2022-08-14T15:09:25 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="afterMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="beforeMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="secondTest()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="secondTest" finished-at="2022-08-14T15:09:25 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="afterMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="beforeMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="thirdTest()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="thirdTest" finished-at="2022-08-14T15:09:25 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- thirdTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="afterMethod" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterclass()[pri:0, instance:training.testng.Annotations@33990a0c]" started-at="2022-08-14T15:09:25 IST" name="afterclass" finished-at="2022-08-14T15:09:25 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterclass -->
+      </class> <!-- training.testng.Annotations -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
